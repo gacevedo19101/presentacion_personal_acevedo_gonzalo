@@ -1,5 +1,40 @@
-.flex_center{
-    display: flex;
-   	flex-direction: row; 
-    justify-content: space-evenly;
+body {
+    font-family: sans-serif; 
+    margin: 20px auto; 
+    max-width: 1200px; 
+    padding: 0 20px; 
+    box-sizing: border-box; 
+}
+header,
+nav,
+main,
+section,
+article,
+footer,
+div {
+  border: 1px solid black; 
+  padding: 10px; 
+  margin-bottom: 15px; 
+}
+
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 20px;
+    background-color: #f0f0f0; 
+}
+.flex_navBar {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    gap: 20px;
+}
+nav div img {
+    max-height: 50px; 
+}
+.flex_navBar li a {
+    text-decoration: none; 
+    color: #333; 
 }
