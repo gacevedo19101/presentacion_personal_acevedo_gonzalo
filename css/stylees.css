@@ -1,3 +1,10 @@
+.color1 {color: #120907;}
+.color_electrico {color: #007bff;}
+.color_naranja_brillante {color: #ffc107;}
+.color_verde_esmeralda {color: #28a745;}
+.color_amarillo_dorado {color: #ffc107;}
+.color_amarillo_dorado {color: #8a2be2;}
+.color_amarillo_dorado {color: #17a2b8;}
 body {
     font-family: sans-serif; 
     margin: 20px auto; 
@@ -22,7 +29,6 @@ nav {
     justify-content: space-between; 
     align-items: center; 
     padding: 15px 20px;
-    background-color: #f0f0f0; 
 }
 .flex_navBar {
     list-style: none; 
@@ -37,4 +43,87 @@ nav div img {
 .flex_navBar li a {
     text-decoration: none; 
     color: #333; 
+}
+section{
+    background-color: #20add8;
+}
+header, footer{
+    background-color: #121a2d;
+    color: aliceblue;
+}
+.seccion-principal {
+  background-color: #f8f9fa; 
+  display: flex; 
+  align-items: center;
+  padding: 40px 20px; 
+  border: none; 
+  margin-bottom: 30px; 
+}
+
+.contenedor-info {
+  flex: 1; 
+  padding-right: 40px; 
+}
+
+.titulo-principal {
+  color: var(--color_electrico, #007bff); 
+  font-size: 2.5em; 
+  margin-bottom: 20px;
+}
+
+.descripcion-principal {
+  color: #555; 
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.habilidades-destacadas {
+  display: flex;
+  gap: 30px; 
+  margin-bottom: 30px;
+}
+
+.habilidad, .experiencia {
+  background-color: #e9ecef; 
+  color: #333;
+  padding: 15px;
+  border-radius: 5px; 
+  font-size: 0.9em;
+}
+
+.boton-principal {
+  display: inline-block;
+  background-color: var(--color_electrico, #007bff); 
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease; 
+}
+
+.boton-principal:hover {
+  background-color: #0056b3; 
+}
+
+.contenedor-imagen {
+  flex: 0.8; 
+}
+
+section {
+  background-color: #f8f9fa; 
+  padding: 30px 20px;
+  border-bottom: 1px solid #eee; 
+  margin-bottom: 0;
+}
+
+section:last-child {
+  border-bottom: none; 
+  margin-bottom: 30px; 
+}
+
+article {
+  border: none; 
+  padding: 0;
+  margin-bottom: 30px;
 }
