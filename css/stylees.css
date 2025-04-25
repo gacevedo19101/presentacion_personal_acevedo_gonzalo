@@ -1,129 +1,304 @@
-.color1 {color: #120907;}
-.color_electrico {color: #007bff;}
-.color_naranja_brillante {color: #ffc107;}
-.color_verde_esmeralda {color: #28a745;}
-.color_amarillo_dorado {color: #ffc107;}
-.color_amarillo_dorado {color: #8a2be2;}
-.color_amarillo_dorado {color: #17a2b8;}
-body {
-    font-family: sans-serif; 
-    margin: 20px auto; 
-    max-width: 1200px; 
-    padding: 0 20px; 
-    box-sizing: border-box; 
-}
-header,
-nav,
-main,
-section,
-article,
-footer,
-div {
-  border: 1px solid black; 
-  padding: 10px; 
-  margin-bottom: 15px; 
-}
-
-nav {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+/* ==================================================
+   1. Variables de Color
+   ================================================== */
+   :root {
+    /* Colores Primarios */
+    --color_primario_teal_oscuro: #008394;
+    --color_secundario_beige_vintage: #F5F5DC;
+  
+    /* Colores de Acento */
+    --color_acento_cyan_suave: #80DEEA;
+    --color_acento_teal_medio: #009aae;
+    --color_acento_amarillo_brillante: #ffc107; 
+  
+    /* Colores de Texto */
+    --color_texto_blanco: #FFFFFF;
+    --color_texto_negro: #333;
+  
+    /* Colores de Fondo Claro */
+    --color_fondo_gris_claro: #F1F8E9;
+    --color_fondo_azul_claro_tarjeta: #E0F2F7;
+  
+    /* Otros Colores */
+    --color_fondo_negro_azulado: #120907;
+    --color_texto_gris_medio: #6b6a6a;
+    --color_texto_input_gris_claro: #eee; 
+    --color_fondo_input_gris_oscuro: #333; 
+    --color_borde_imagen_perfil: #ccc; 
+  }
+  
+  /* ==================================================
+     2. Estilos Generales
+     ================================================== */
+  body {
+    font-family: sans-serif;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: var(--color_primario_teal_oscuro);
+    color: var(--color_texto_blanco);
+  }
+  
+  /* Estilos para contenedores principales */
+  header, nav, main, section, article, footer, div {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* ==================================================
+     3. Estilos del Encabezado (Header)
+     ================================================== */
+  header {
+    background-color: var(--color_fondo_negro_azulado);
+    color: var(--color_texto_blanco);
+  }
+  
+  /* ==================================================
+     4. Estilos de la Navegación (Nav)
+     ================================================== */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px 20px;
-}
-.flex_navBar {
-    list-style: none; 
+    background-color: transparent;
+  }
+  
+  nav div img {
+    max-height: 50px;
+  }
+  
+  .flex_navBar {
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; 
+    display: flex;
     gap: 20px;
-}
-nav div img {
-    max-height: 50px; 
-}
-.flex_navBar li a {
-    text-decoration: none; 
-    color: #333; 
-}
-section{
-    background-color: #20add8;
-}
-header, footer{
-    background-color: #121a2d;
-    color: aliceblue;
-}
-.seccion-principal {
-  background-color: #f8f9fa; 
-  display: flex; 
-  align-items: center;
-  padding: 40px 20px; 
-  border: none; 
-  margin-bottom: 30px; 
-}
-
-.contenedor-info {
-  flex: 1; 
-  padding-right: 40px; 
-}
-
-.titulo-principal {
-  color: var(--color_electrico, #007bff); 
-  font-size: 2.5em; 
-  margin-bottom: 20px;
-}
-
-.descripcion-principal {
-  color: #555; 
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-.habilidades-destacadas {
-  display: flex;
-  gap: 30px; 
-  margin-bottom: 30px;
-}
-
-.habilidad, .experiencia {
-  background-color: #e9ecef; 
-  color: #333;
-  padding: 15px;
-  border-radius: 5px; 
-  font-size: 0.9em;
-}
-
-.boton-principal {
-  display: inline-block;
-  background-color: var(--color_electrico, #007bff); 
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease; 
-}
-
-.boton-principal:hover {
-  background-color: #0056b3; 
-}
-
-.contenedor-imagen {
-  flex: 0.8; 
-}
-
-section {
-  background-color: #f8f9fa; 
-  padding: 30px 20px;
-  border-bottom: 1px solid #eee; 
-  margin-bottom: 0;
-}
-
-section:last-child {
-  border-bottom: none; 
-  margin-bottom: 30px; 
-}
-
-article {
-  border: none; 
-  padding: 0;
-  margin-bottom: 30px;
-}
+  }
+  
+  .flex_navBar li a {
+    text-decoration: none;
+    color: var(--color_texto_blanco);
+  }
+  
+  /* ==================================================
+     5. Estilos de las Secciones (General)
+     ================================================== */
+  section {
+    background-color: var(--color_secundario_beige_vintage); 
+    color: var(--color_texto_negro); 
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    border: none;
+    margin-bottom: 30px;
+    flex-direction: column; 
+    justify-content: center; 
+  }
+  
+  section:last-child {
+    margin-bottom: 30px;
+    border-bottom: none;
+  }
+  
+  #sobre_mi {
+    flex-direction: row-reverse;
+    background-color: var(--color_primario_teal_oscuro); 
+    color: var(--color_texto_blanco); 
+  }
+  
+  /* ==================================================
+     6. Estilos de la Sección Principal (#inicio)
+     ================================================== */
+  #inicio {
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-around; 
+  }
+  
+  #inicio .contenedor-info {
+    flex: 1;
+    padding-right: 40px;
+    align-items: flex-start; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #inicio .contenedor-info > div {
+    align-self: flex-start; 
+  }
+  
+  #inicio .habilidades-destacadas {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    background-color: var(--color_fondo_gris_claro);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #inicio .habilidad,
+  #inicio .experiencia {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 0.9em;
+  }
+  
+  .titulo-principal {
+    color: var(--color_primario_teal_oscuro);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .descripcion-principal {
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .habilidades-destacadas {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .habilidad,
+  .experiencia {
+    background-color: var(--color_fondo_gris_claro);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  
+  .boton-principal {
+    display: inline-block;
+    background-color: var(--color_acento_amarillo_brillante); 
+    color: var(--color_texto_negro);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-principal:hover {
+    background-color: #e6b800; 
+  }
+  
+  .contenedor-imagen {
+    flex: 0.8;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para la imagen de perfil */
+  .contenedor-imagen-perfil {
+    width: 180px; 
+    height: 220px; 
+    overflow: hidden;
+    border: 3px solid var(--color_borde_imagen_perfil); 
+    margin: 0;
+    border-radius: 50%;
+  }
+  
+  .contenedor-imagen-perfil img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    object-position: center top; 
+  }
+  
+  /* ==================================================
+     7. Estilos para los Artículos dentro de las Secciones
+     ================================================== */
+  article {
+    border: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: center; 
+  }
+  
+  /* Estilos específicos para los títulos h2 dentro de #sobre_mi y #habilidades */
+  #sobre_mi h2.titulo-principal,
+  #habilidades article h2 {
+    color: var(--color_acento_cyan_suave); 
+  }
+  
+  /* ==================================================
+     8. Estilos de la Sección de Contacto
+     ================================================== */
+  #contacto {
+    flex-direction: column;
+    align-items: center; 
+    background-color: var(--color_secundario_beige_vintage); 
+    padding: 50px 20px; 
+    border-radius: 10px;
+  }
+  
+  #contacto article {
+    width: 80%; 
+    max-width: 600px; 
+  }
+  
+  #contacto h2 {
+    color: var(--color_primario_teal_oscuro); 
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #contacto label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--color_primario_teal_oscuro); 
+  }
+  
+  #contacto input[type="text"],
+  #contacto input[type="email"],
+  #contacto textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid var(--color_acento_cyan_suave);
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff; 
+    color: #000; 
+  }
+  
+  #contacto textarea {
+    resize: vertical;
+    min-height: 120px; /* Mayor altura para el textarea */
+  }
+  
+  
+  /* ==================================================
+     8. Estilos de la Sección de Habilidades
+     ================================================== */
+  #habilidades {
+    background-color: var(--color_primario_teal_oscuro); 
+    color: var(--color_texto_blanco); 
+  }
+  
+  /* ==================================================
+     9. Estilos del Pie de Página (Footer)
+     ================================================== */
+  footer {
+    background-color: var(--color_fondo_negro_azulado);
+    color: var(--color_texto_blanco);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer div a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  footer div img {
+    max-height: 30px;
+  }
