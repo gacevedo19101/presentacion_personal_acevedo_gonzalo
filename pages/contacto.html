@@ -23,7 +23,62 @@
     </nav>
   </header>
   <main>
-
+    <section id="formulario_contacto" class="seccion-principal">
+        <div class="contenedor-info">
+            <h2 class="titulo-principal">¡Hablemos!</h2>
+            <p class="descripcion-principal">
+                Si tienes alguna pregunta, propuesta de colaboración o simplemente quieres saludar, no dudes en utilizar el siguiente formulario. ¡Estaré encantado de leer tu mensaje!
+            </p>
+            <form action="/enviar-mensaje" method="POST" class="formulario">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="7" required></textarea>
+                </div>
+                <button type="submit" class="boton-principal">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+    
+    <section id="informacion_contacto" class="seccion-principal">
+        <div class="contenedor-info">
+            <h2 class="titulo-principal">Información de Contacto</h2>
+            <p class="descripcion-principal">
+                Aquí encontrarás otras formas de ponerte en contacto conmigo. ¡Elige la que te sea más cómoda!
+            </p>
+            <ul class="lista-contacto">
+                <li>
+                    <strong>Email:</strong> <a href="mailto:tu_correo@ejemplo.com">tu_correo@ejemplo.com</a>
+                </li>
+                <li>
+                    <strong>LinkedIn:</strong> <a href="[Tu LinkedIn]" target="_blank" rel="noopener noreferrer">Mi perfil de LinkedIn</a>
+                </li>
+                <li>
+                    <strong>GitHub:</strong> <a href="[Tu GitHub]" target="_blank" rel="noopener noreferrer">Mi perfil de GitHub</a>
+                </li>
+                </ul>
+        </div>
+    </section>
+    
+    <section id="redes_sociales_contacto" class="seccion-principal">
+        <div class="contenedor-info">
+            <h2 class="titulo-principal">Sígueme en mis Redes</h2>
+            <p class="descripcion-principal">
+                También puedes conectar conmigo a través de mis redes sociales. ¡Te espero por allí!
+            </p>
+            <div class="enlaces-redes">
+                <a href="[Tu LinkedIn]" target="_blank" rel="noopener noreferrer"><img src="assets/images/linkedin_icon.png" alt="LinkedIn"></a>
+                <a href="[Tu GitHub]" target="_blank" rel="noopener noreferrer"><img src="assets/images/github_icon.png" alt="GitHub"></a>
+                </div>
+        </div>
+    </section>
   </main>
   <footer>
     <p>Conoce mis redes sociales personales</p>
